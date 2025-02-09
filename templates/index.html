@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AI-Based Resume Screener</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; }
+      form { margin-bottom: 20px; }
+      label { display: block; margin-top: 10px; }
+      input, select { width: 300px; padding: 8px; }
+      button { margin-top: 20px; padding: 10px 20px; }
+      h2 { color: green; }
+    </style>
+  </head>
+  <body>
+    <h1>AI-Based Resume Screener</h1>
+    <form action="/predict" method="post">
+      <label for="skills">Skills (e.g., Python, Machine Learning):</label>
+      <input type="text" id="skills" name="skills" required>
+
+      <label for="experience">Experience (years):</label>
+      <input type="number" id="experience" name="experience" step="any" required>
+
+      <label for="education">Education:</label>
+      <select id="education" name="education">
+        <option value="PhD">PhD</option>
+        <option value="MSc">MSc</option>
+        <option value="BSc">BSc</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Display prediction result if available -->
+    {% if prediction_text %}
+      <h2>{{ prediction_text }}</h2>
+    {% endif %}
+  </body>
+</html>
