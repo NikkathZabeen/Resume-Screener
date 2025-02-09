@@ -14,7 +14,7 @@ This project is an AI-based Resume Screener that predicts whether an applicant s
   Built with Flask and ready to deploy on platforms like Render using Gunicorn.
 - **Google Colab Integration:**  
   Includes a Google Colab notebook for experimentation, training, and model evaluation.
-  [Google colab Notebook](https://colab.research.google.com/drive/1H-YUeEfzVpe1CkqKSnq_4b8z0H9PcqWa#scrollTo=e6TKZrDIqCWD)
+  [Google colab Notebook](https://colab.research.google.com/drive/1H-YUeEfzVpe1CkqKSnq_4b8z0H9PcqWa?usp=sharing)
 
 
 
